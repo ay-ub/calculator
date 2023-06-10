@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calclate</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="desplay">
+                <input type="text" name="desplay" value="0" >
+            </div>
+            <div class="row">
+                <input class="ac" type="button" value="CLEAR" onclick="desplay.value = ''">
+                <input class="del" type="button" value="DEL" onclick="desplay.value = desplay.value.toString().slice(0 , -1)">
+                <input class="opt" type="button" value="/" onclick="desplay.value += '/'">
+            </div>
+            <div class="row">
+                <input class="number" type="button" value="7" onclick="desplay.value += '7' ">
+                <input class="number" type="button" value="8" onclick="desplay.value += '8' ">
+                <input class="number" type="button" value="9" onclick="desplay.value += '9' ">
+                <input class="opt" type="button" value="×" onclick="desplay.value += '*' ">
+            </div>
+            <div class="row">
+                <input class="number" type="button" value="4" onclick="desplay.value += '4' ">
+                <input class="number" type="button" value="5" onclick="desplay.value += '5' ">
+                <input class="number" type="button" value="6" onclick="desplay.value += '6' ">
+                <input class="opt" type="button" value="-" onclick="desplay.value += '-' ">
+            </div>
+            <div class="row">
+                <input class="number" type="button" value="1" onclick="desplay.value += '1' ">
+                <input class="number" type="button" value="2" onclick="desplay.value += '2' ">
+                <input class="number" type="button" value="3" onclick="desplay.value += '3' ">
+                <input class="opt" type="button" value="+" onclick="desplay.value += '+' ">
+            </div>
+            <div class="row">
+                <input class="opt" type="button" value="." onclick="desplay.value += '.'">
+                <input class="number" type="button" value="0" onclick="desplay.value += '0' ">
+                <input class="equal" type="button" value="=" onclick="desplay.value = eval(desplay.value)">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
